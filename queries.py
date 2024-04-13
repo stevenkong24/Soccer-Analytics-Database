@@ -170,7 +170,7 @@ def Q_1(cursor, conn, execution_time):
 
     query = """ SELECT player_name, SUM(statsbomb_xg)/COUNT(*) as sum_xg
     FROM events INNER JOIN matches ON events.match_id = matches.match_id
-    WHERE type_name = 'Shot' AND competition_name = 'La Liga' AND season_name = '2020/2021'
+    WHERE competition_name = 'La Liga' AND season_name = '2020/2021' AND type_name = 'Shot'
     GROUP BY player_name
     ORDER BY sum_xg DESC"""
 

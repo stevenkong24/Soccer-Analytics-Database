@@ -1671,23 +1671,7 @@ def dropTables():
     '''
     cursor.execute(sql)
     connect.commit()
-    """
-    sql = '''DROP INDEX idx_q1_events'''
-    cursor.execute(sql)
-    connect.commit()
     
-    sql = '''DROP INDEX idx_q1_matches'''
-    cursor.execute(sql)
-    connect.commit()
-    
-    sql = '''DROP INDEX idx_q2_events'''
-    cursor.execute(sql)
-    connect.commit()
-    
-    sql = '''DROP INDEX idx_q2_matches'''
-    cursor.execute(sql)
-    connect.commit()
-    """
     
 def main():
     try:
